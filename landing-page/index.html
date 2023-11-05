@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <!-- <img class="header__logo" src="images/logo.svg" alt="logo"> -->
+    <span class="header__logo" style="font-size: 25px;">InnoVerse</span>
+    <nav class="header__links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><button>Contact</button></li>
+    </nav>
+    
+    <button class="header__menu" onclick="changeStyle()" ><img  src="images/icon-hamburger.svg" alt=""></button>
+    <!-- <img class="close" src="images/icons8-close.svg" alt=""> -->
+  </header>
+  <div class="header__links--container" id="headerLinks">
+    <nav class="header__links--col">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><button>Contact</button></li>
+    </nav>
+  </div>
+
+  <section class="headline">
+    <h1>
+      Elevate Your Experience
+    </h1>
+    <!-- <img src="images/icon-arrow-down.svg" alt=""> -->
+  </section>
+
+  <section class="benefits">
+    <div class="benefits__one">
+      <div class="benefits__one--content">
+        <h3>Transform your brand</h3>
+
+        <p> We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="benefits__one--image">
+
+      </div>
+    </div>
+
+    <div class="benefits__two">
+      <div class="benefits__two--image">
+
+      </div>
+      <div class="benefits__two--content">
+        <h3>Stand out to the right audience</h3>
+
+        <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+          we'll
+          build
+          and extend your brand in digital places.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="features">
+    <div class="features__one">
+      <h3>Graphic design</h3>
+      <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+        potential clients' attention.</p>
+    </div>
+    <div class="features__two">
+      <h3>Photography</h3>
+      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </p>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>Client testimonials</h2>
+
+    <div class="content">
+      <div class="review">
+        <img src="images/image-emily.jpg" alt="" width="72px">
+        <p> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+          hit.</p>
+        <div>
+          <h3> Emily R.</h3>
+          <h4>Marketing Director</h4>
+        </div>
+
+      </div>
+      <div class="review">
+        <img src="images/image-thomas.jpg" alt="" width="72px">
+        <p> Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and
+          enjoyable
+          experience.</p>
+        <div>
+          <h3>Thomas S.</h3>
+          <h4>Chief Operating Officer</h4>
+        </div>
+      </div>
+      <div class="review">
+        <img src="images/image-jennie.jpg" alt="" width="72px">
+        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <div>
+          <h3>Jennie F.</h3>
+          <h4>Business Owner</h4>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="images">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+  
+  <footer class="footer">
+    <!-- <img class="footer__logo" src="images/logo-green.svg" alt="" width="168px"> -->
+    <span class="footer__logo" style="font-size: 25px;">InnoVerse</span>
+    <div class="footer__nav">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+    </div>
+    <div class="footer__socials">
+      <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
+      <a href="#"><img src="images/icon-instagram.svg" alt=""></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
+      <a href="#"><img src="images/icon-pinterest.svg" alt=""></a>
+    </div>
+
+  </footer>
+
+  </div>
+
+  <script>
+    window.onload = function () {
+  window.addEventListener("scroll", function (e) {
+    if (window.scrollY > 300) {
+      this.document.querySelector("header").classList.add("is-scrolling");
+    } else {
+      this.document.querySelector("header").classList.remove("is-scrolling");
+    }
+  });
+}
+const headerLinks = document.getElementById('headerLinks');
+function changeStyle() {
+
+    if(headerLinks.style.display === 'none') {
+      headerLinks.style.display = 'flex';
+    } else {
+      headerLinks.style.display = 'none'
+    }
+
+}
+  </script>
+  
+</body>
+
+</html>

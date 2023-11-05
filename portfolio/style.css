@@ -1,0 +1,72 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    margin-bottom: 0.625rem;
+}
+
+header p {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+section {
+    background-color: #fff;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+ul li {
+    font-size: 1.125rem;
+    margin-bottom: 0.625rem;
+    line-height: 1.5;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-top: 0.625rem;
+}
+
+.project p {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.625rem;
+}
+
+/* Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+@font-face {
+  font-family: digital-font;
+  src: url(fonts/DIGITALDREAM.ttf);
+}
+
+h1{
+  font-size: 30px;
+}
+
+body{
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f1f5;
+}
+
+
+.calculator {
+  min-width: 30%;
+  font-family: digital-font;
+
+  /* margin: 0 auto; */
+  padding: 20px;
+  background: #f0f1f5;
+  border-radius: 8%;
+  box-shadow: 9.91px 9.91px 25px #d1d3d7, -9.91px -9.91px 25px #ffffff;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .calculator{
+    min-width: 60%;
+  }
+}
+
+input[type="text"], input[type="button"] {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  width: auto;
+  margin: 32px 16px 48px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  background: #EEF0F4;
+border-radius: 15px;
+box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
+}
+input[type="text"]:focus{
+  border: none;
+  background: #EEF0F4;
+box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+}
+
+input[type="button"] {
+  margin: 16px;
+  border: none;
+  background: #EEF0F4;
+  border-radius: 100%;
+  box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out ;
+}
+
+input[type="button"]:hover {
+  transform: scale(1.05);
+  color: #007bff;
+}
+input[type="button"]:active {
+  background: #EEF0F4;
+  border-radius: 100%;
+  box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+  transform: scale(0.95);
+}
+
+#history {
+  margin-top: 48px;
+  padding: 10px 15px;
+  background-color: #366496;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#history:hover {
+  background-color: #182f47;
+}
+
+#historyDisplay {
+  display: none;
+  text-align: left;
+}
+#historyDisplay h2{
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin: 5px 0;
+}
